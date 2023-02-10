@@ -59,11 +59,12 @@ function Home() {
         <div css={gridCont}>
             {/* About Card */}
             <Card css = {aboutStyle}>
-                <Typography variant="h5" css={css({marginLeft: "20px", marginBottom: "5px", marginTop: "10px", fontWeight: "bold"})}>About Me</Typography>
+                <Typography variant="p" className="title" css={css({marginLeft: "35px", marginBottom: "5px", marginTop: "10px", fontSize: '30px', fontWeight: 'bold'})}>About Me</Typography>
                 <Divider css={css({marginBottom: "20px"})} />
                 <img src={require("../files/JonahPic.jpg")} alt="Jonah Profile" css={imgStyle}/>
-                <Typography variant = "h6" css={css({marginLeft: '50px', paddingRight: '50px', fontSize: '20px'})}>
-                    My name is Jonah Ableman and I am a Junior studying computer science at the University of Michigan.
+                <Typography variant = "p" className="title" css={css({paddingRight: '50px', fontSize: '20px', fontWeight: "bold"})}>
+                    My name is Jonah Ableman and I am a Junior studying computer science with a minor in music at the University of Michigan.
+                    Thanks so much for visiting my site, I hope it can provide some insight into my professional skillset, as well as some of my more personal endeavors.
                     I am extremely passionate about emergent technologies, especially those relating to extended reality initiatives. 
                     I believe that I can use my skills to contribute to a larger community and have a positive influence on the world around me.<br/><br/>
                     Through my software internship at Whisker in Michigan, I learned so much about working in a fast-paced environment and contributing to an existing project ecosystem.
@@ -73,7 +74,7 @@ function Home() {
             </Card>
             {/* Experience Card */}
             <Card css = {aboutStyle}>
-                <Typography variant="h5" css={css({textAlign: 'center', marginBottom: "5px", marginTop: "5px", fontWeight: "bold"})}>Experience</Typography>
+                <Typography variant="p"  className="title" css={css({textAlign: 'center', marginBottom: "5px", marginTop: "5px", fontSize:"25px", display: 'block'})}>Experience</Typography>
                 <Divider css={css({marginBottom: "15px", gridRow: " 1 / 4"})} />
                 {/* Whisker*/}
                 <div css={expGridC}>
@@ -98,7 +99,7 @@ function Home() {
             </Card>
             {/*Extracurricular Card */}
             <Card css = {aboutStyle}>
-                <Typography variant="h5" css={css({textAlign: 'center', marginBottom: "5px", marginTop: "5px", fontWeight: "bold"})}>Extracurriculars</Typography>
+                <Typography variant="p"  className="title" css={css({textAlign: 'center', marginBottom: "5px", marginTop: "5px", fontSize:"25px", display: 'block'})}>Extracurriculars</Typography>
                 <Divider css={css({marginBottom: "15px", gridRow: " 1 / 4"})} />
                 {/*Shift*/}
                 <div css={expGridC}>

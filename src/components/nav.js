@@ -21,7 +21,7 @@ function Nav() {
     return (
         <AppBar position = "fixed" css={barStyle}>
             <Toolbar>
-                <Typography variant = "h4" fontFamily="serif">
+                <Typography variant = "p" fontSize={"30px"} className="title">
                     Jonah Ableman
                 </Typography>
                 <div css={css({
@@ -33,6 +33,9 @@ function Nav() {
                     </Button>
                     <Button variant = "contained" css={linkStyle} onClick={() => navigate('/projects')}>
                         Projects
+                    </Button>
+                    <Button variant = "contained" css={linkStyle} href="https://www.linkedin.com/in/jonah-ableman/" target="_blank">
+                        LinkedIn
                     </Button>
                     <Button variant = "contained" css={linkStyle} href="https://github.com/Jableman19" target="_blank">
                         Github

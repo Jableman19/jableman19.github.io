@@ -19,7 +19,7 @@ function Nav() {
     const barStyle = css({backgroundColor: '#205e31'})
 
     return (
-        <AppBar position = "static" css={barStyle}>
+        <AppBar position = "fixed" css={barStyle}>
             <Toolbar>
                 <Typography variant = "h4" fontFamily="serif">
                     Jonah Ableman

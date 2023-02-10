@@ -51,7 +51,7 @@ function Projects() {
             <div css={gridCont}>
                 <div css={gridItem} onClick={() => navigate('/')}>
                     <Card onMouseLeave={() => {handleChange("");}} onMouseOver={() => handleChange("BBB")}>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Vl-r5Yk-pVo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                        <iframe height="315" width="100%" src="https://www.youtube.com/embed/Vl-r5Yk-pVo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                         <Accordion expanded={expanded === "BBB"}>
                             <AccordionSummary
                                 aria-controls="panel1a-content"
@@ -73,7 +73,7 @@ function Projects() {
                 </div>
                 <div css={gridItem}>
                     <Card onMouseLeave={() => {handleChange("");}} onMouseOver={() => handleChange("SS")}>
-                    <iframe display='block' width="560" height="315" src="https://www.youtube.com/embed/c-45ivGvhIM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen ></iframe>
+                    <iframe display='block' height="315" width="100%" src="https://www.youtube.com/embed/c-45ivGvhIM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen ></iframe>
                         <Accordion expanded={expanded === "SS"}>
                             <AccordionSummary
                                 aria-controls="panel1a-content"
@@ -95,7 +95,7 @@ function Projects() {
                 </div>
                 <div css={gridItem}>
                     <Card onMouseLeave={() => {handleChange("");}} onMouseOver={() => handleChange("SAX")}>
-                        <img height={"315px"} src={require('../files/SaxSimScreenCap.png')} alt = "Saxo Sim Game Screen" css={css({width: 'auto'})}></img>
+                        <img height={"315px"} align={'center'} src={require('../files/SaxSimScreenCap.png')} alt = "Saxo Sim Game Screen" css={css({width: 'auto'})}></img>
                         <Accordion expanded={expanded === "SAX"}>
                             <AccordionSummary
                                 aria-controls="panel1a-content"

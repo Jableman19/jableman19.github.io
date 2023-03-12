@@ -79,6 +79,25 @@ function Projects() {
                             </AccordionDetails>
                         </Accordion>
                     </Card>
+                    <Card onMouseLeave={() => {handleChange("");}} onMouseOver={() => handleChange("PFY")} css = {cardStyle}>
+                        <img height={"315px"} src={require('../files/pokefy.gif')} alt = "Pokefy" css={css({width: 'auto', display: 'block', margin: 'auto'})}></img>
+                        <Accordion expanded={expanded === "PFY"}>
+                            <AccordionSummary
+                                aria-controls="panel1a-content"
+                                id="panel1a-header"
+                                >
+                                <Typography css = {accTitle}>Pokemon Spotify App</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails css={accStyle}>
+                                <Typography >
+                                    Pokefy is a Spotify webapp made in React with the Spotify API.
+                                    It analyzes a user's top 50 songs and returns a correspondingly popular Pokemon based
+                                    on an internet poll. This was a really fun and quick project for me, as it was my first time
+                                    working with a public API, and it was a challenge to get everything running and deployed in 24 hours. 
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                    </Card>
                     <Card onMouseLeave={() => {handleChange("");}} onMouseOver={() => handleChange("CRO")} css = {cardStyle}>
                         <img height={"315px"} src={require('../files/Oshawott.jpg')} alt = "Crocheted Oshawott" css={css({width: 'auto', display: 'block', margin: 'auto'})}></img>
                         <Accordion expanded={expanded === "CRO"}>
@@ -95,23 +114,6 @@ function Projects() {
                                     I started learning how to crochet near the end of summer 2022.
                                     It's been such a great way for me to engage with my creative side and play around with my 3d awareness.
                                     Above are a few of my favorite projects so far!
-                                </Typography>
-                            </AccordionDetails>
-                        </Accordion>
-                    </Card>
-                    <Card onMouseLeave={() => {handleChange("");}} onMouseOver={() => handleChange("RIN")} css = {cardStyle}>
-                        <img height={"315px"} src={require('../files/Rings1.jpg')} alt = "Wooden Rings" css={css({width: 'auto', display: 'block', margin: 'auto'})}></img>
-                        <Accordion expanded={expanded === "RIN"}>
-                            <AccordionSummary
-                                aria-controls="panel1a-content"
-                                id="panel1a-header"
-                                >
-                                <Typography css = {accTitle}>Upcycled Rings</Typography>
-                            </AccordionSummary>
-                            <AccordionDetails css={accStyle}>
-                                <Typography >
-                                    Creating these rings came from being inspired to reduce my own personal waste. As someone who skateboards, I often find myself throwing out lots of old broken decks. 
-                                    I wanted to challenge myself to take those and turn them into something new. While this was my first time working closely with wood, I'm quite proud of the results. 
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
@@ -152,6 +154,23 @@ function Projects() {
                                 <Typography >
                                     This was a very fun project for me. Using Adobe's animation studio, I painstakingly drew over 50 frames for this 4 second animation.
                                     I also challenged myself to design, print, and bind a physical flipbook.
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                    </Card>
+                    <Card onMouseLeave={() => {handleChange("");}} onMouseOver={() => handleChange("RIN")} css = {cardStyle}>
+                        <img height={"315px"} src={require('../files/Rings1.jpg')} alt = "Wooden Rings" css={css({width: 'auto', display: 'block', margin: 'auto'})}></img>
+                        <Accordion expanded={expanded === "RIN"}>
+                            <AccordionSummary
+                                aria-controls="panel1a-content"
+                                id="panel1a-header"
+                                >
+                                <Typography css = {accTitle}>Upcycled Rings</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails css={accStyle}>
+                                <Typography >
+                                    Creating these rings came from being inspired to reduce my own personal waste. As someone who skateboards, I often find myself throwing out lots of old broken decks. 
+                                    I wanted to challenge myself to take those and turn them into something new. While this was my first time working closely with wood, I'm quite proud of the results. 
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>

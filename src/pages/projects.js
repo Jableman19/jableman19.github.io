@@ -158,6 +158,25 @@ function Projects() {
                     </Card>
                 </Stack>
                 <Stack css={gridItem}>
+                    <Card onMouseLeave={() => {handleChange("");}} onMouseOver={() => handleChange("A2G")} css = {cardStyle}>
+                        <iframe display='block' height="315" width="100%" src="https://www.youtube.com/embed/g46pAkalxLo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen ></iframe>
+                        <Accordion expanded={expanded === "A2G"}>
+                            <AccordionSummary
+                                aria-controls="panel1a-content"
+                                id="panel1a-header"
+                                >
+                                <Typography css = {accTitle}>A2GO</Typography>
+                                <Typography css={accDate}>February - March 2023</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails css={accStyle}>
+                                <Typography >
+                                    This project is based on the popualar AR mobile game, Pokemon Go, but with reimagined features and mechanics.
+                                    I worked on this app for 3 weeks with my fellow student, Zachary Behrman. This was such a great learning experience for me
+                                    as I gained familiarity with Unity's AR features, and mobile targeted development. Made in C# with Unity.
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                    </Card>
                     <Card onMouseLeave={() => {handleChange("");}} onMouseOver={() => handleChange("SAX")} css = {cardStyle}>
                         <img height={"315px"} align={'center'} src={require('../files/SaxSimScreenCap.png')} alt = "Saxo Sim Game Screen" css={css({width: 'auto'})}></img>
                         <Accordion expanded={expanded === "SAX"}>

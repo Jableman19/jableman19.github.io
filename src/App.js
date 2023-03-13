@@ -1,10 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"  
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, HashRouter } from "react-router-dom"
+import { Routes, Route, HashRouter } from "react-router-dom"
 import Home from "./pages/home"
 import Nav from "./components/nav"
 import Projects from './pages/projects';
+import Showcase from './pages/showcase';
 function App() {
   return (
     <HashRouter>
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path ="/" element={<Home/>}/>
         <Route path ="/projects" element={<Projects/>}/>
+        <Route path ="/showcase" element={<Showcase/>}/>
       </Routes>
     </HashRouter>
   );

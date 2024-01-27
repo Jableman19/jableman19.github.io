@@ -23,11 +23,15 @@ function Home() {
         margin: "20px",
         padding: "10px",
         backgroundColor: "#f2eeed",
-        '&:first-of-type':{
-            gridColumn: '1 / 3'
-        },
         '&:hover':{
             boxShadow: "5px 5px #49a362"
+        },
+        '&:nth-of-type(3n+1)':{
+            gridColumn: '1 / 3'
+        },
+        //mobile
+        '@media (max-width: 768px)': {
+            gridColumn: '1 / 3',
         }
     })
 
@@ -63,12 +67,12 @@ function Home() {
                 <Divider css={css({marginBottom: "20px"})} />
                 <img src={require("../files/JonahPic.jpg")} alt="Jonah Profile" css={imgStyle}/>
                 <Typography variant = "p" className="title" css={css({paddingRight: '50px', fontSize: '20px', fontWeight: "bold"})}>
-                    My name is Jonah Ableman and I am a Junior studying computer science with a minor in music at the University of Michigan.
+                    My name is Jonah Ableman and I am a Senior studying computer science with a minor in music at the University of Michigan.
                     Thanks so much for visiting my site, I hope it can provide some insight into my professional skillset, as well as some of my more personal endeavors.
                     I am extremely passionate about emergent technologies, especially those relating to extended reality initiatives. 
                     I believe that I can use my skills to contribute to a larger community and have a positive influence on the world around me.<br/><br/>
-                    Through my software internship at Whisker in Michigan, I learned so much about working in a fast-paced environment and contributing to an existing project ecosystem.
-                    I’m beyond excited to further my knowledge this coming summer as a software development intern at Amazon. <br/> <br/>
+                    Through my software internships at both Amazon and Whisker, I learned so much about working in fast-paced environments and contributing to an existing project ecosystem.
+                    I’m beyond excited to continue my career and I'm currently searching for full time roles. <br/> <br/>
                     My goal is to work somewhere that will give me the opportunity to creatively explore and create software, while contributing to something meaningful.
                 </Typography>
             </Card>
@@ -76,8 +80,21 @@ function Home() {
             <Card css = {aboutStyle}>
                 <Typography variant="p"  className="title" css={css({textAlign: 'center', marginBottom: "5px", marginTop: "5px", fontSize:"25px", display: 'block'})}>Experience</Typography>
                 <Divider css={css({marginBottom: "15px", gridRow: " 1 / 4"})} />
-                {/* Whisker*/}
                 <div css={expGridC}>
+                    {/* Amazon*/}
+                    <div css={css({marginRight: '10px'})}>
+                        <Typography variant = "p1" css={css({display: 'block', textAlign: "right", fontWeight: 'bold'})}>Amazon</Typography>
+                        <Typography variant = "p2" css={css({display: 'block', fontSize: "12px", textAlign: 'right' })}>Software Developer Engineer Intern</Typography>
+                        <Typography variant = "p2" css={css({display: 'block', fontSize: "12px", textAlign: 'right' })}>May 2023 - August 2023</Typography>
+                        <img src={require("../files/AMZN-e9f942e4.png")} alt="Amazon Logo" css={logoStyle}/>
+                    </div>
+                    <Divider orientation="vertical"/>
+                    <ul  css={css({marginBottom: "15px"})}>
+                        <li css = {listStyle}>Aiding in the development of a React Native application, serving 500,000+ daily users</li>
+                        <li css = {listStyle}>Running experiments using A/B testing to optimize customer experience</li>
+                        <li css = {listStyle}>Participating in agile methodology practices such as daily standups, code reviews, and extensive debugging in order to ensure a secure and structured environment</li>
+                    </ul>
+                    {/* Whisker*/}
                     <div css={css({marginRight: '10px'})}>
                         <Typography variant = "p1" css={css({display: 'block', textAlign: "right", fontWeight: 'bold'})}>Whisker</Typography>
                         <Typography variant = "p2" css={css({display: 'block', fontSize: "12px", textAlign: 'right' })}>Software Engineer Intern</Typography>
@@ -89,13 +106,11 @@ function Home() {
                         <li css = {listStyle}>Contributed to a full stack internal diagnostic tool using Typescript and React, decreasing customer support times by over 50% and saving the company over $20,000 a year on external software </li>
                         <li css = {listStyle}>Handled and developed backend interactions with AWS for a network of over 500,000 devices, improving application efficiency and consumer experience</li>
                         <li css = {listStyle}>Led development of a new feature from start to finish including design, documentation, and development</li>
-                        <li css = {listStyle}>Participated in agile methodology practices such as daily standups, code reviews, and extensive debugging in order to ensure a secure and structured environment</li>
                         <li css = {listStyle}>Converted project codebase to use AWS CDK in order to utilize infrastructure as code and improve efficiency</li>
                         <li css = {listStyle}>Assisted in development of new project backend, creating REST API endpoints to be utilized by over 250,000 mobile devices</li>
 
                     </ul>
                 </div>
-                
             </Card>
             {/*Extracurricular Card */}
             <Card css = {aboutStyle}>
@@ -132,6 +147,28 @@ function Home() {
                     </ul>
                 </div>
             </Card>
+            {/* Education Card */}
+            <Card css = {aboutStyle}>
+                <Typography variant="p"  className="title" css={css({textAlign: 'center', marginBottom: "5px", marginTop: "5px", fontSize:"25px", display: 'block'})}>Education</Typography>
+                <Divider css={css({marginBottom: "15px", gridRow: " 1 / 4"})} />
+                <div css={expGridC}>
+                    {/* University of Michigan */}
+                    <div css={css({marginRight: '10px'})}>
+                        <Typography variant = "p1" css={css({display: 'block', textAlign: "right", fontWeight: 'bold'})}>University of Michigan</Typography>
+                        <Typography variant = "p2" css={css({display: 'block', fontSize: "12px", textAlign: 'right' })}>BSE Computer Science</Typography>
+                        <Typography variant = "p2" css={css({display: 'block', fontSize: "12px", textAlign: 'right' })}>Music Minor</Typography>
+
+                        <Typography variant = "p2" css={css({display: 'block', fontSize: "12px", textAlign: 'right' })}>August 2020 - May 2024</Typography>
+                        <img src={require("../files/umich.png")} alt="University of Michigan Logo" css={logoStyle}/>
+                    </div>
+                    <Divider orientation="vertical"/>
+                    <ul  css={css({marginBottom: "15px"})}>
+                        <li css = {listStyle}>Relevant Coursework: Data Structures, Algorithms, Computer Vision, XR and Society, Game Development,<br></br>Game Engine Architecture, Discrete Math, Foundations of Computer Science, Computer Organization, Linear Algebra</li>
+                        <li css = {listStyle}>Skills:  C++, Python, React, React Native, C#, UNIX,  Typescript, AWS,  Git, HTML, CSS, VS Code, Unreal Engine, Unity, Arduino</li>
+                    </ul>
+                 </div>
+            </Card>
+
         </div>
         
     )

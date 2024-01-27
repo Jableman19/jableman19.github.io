@@ -9,7 +9,7 @@ import Showcase from './pages/showcase';
 function App() {
   return (
     <HashRouter>
-      <Nav css={css({position: 'fixed'})}/>
+      <Nav css={css({position: 'fixed'})}></Nav>
       <Routes>
         <Route path ="/" element={<Home/>}/>
         <Route path ="/projects" element={<Projects/>}/>

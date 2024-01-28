@@ -48,6 +48,15 @@ function Home() {
         marginRight: "20px",
         marginLeft: "20px",
         marginBottom: "10px",
+        //mobile
+        '@media (max-width: 768px)': {
+            width: "100%",
+            height: "auto",
+            float: "none",
+            marginLeft: "auto",
+            marginRight: "auto",
+            display: "block",
+        }
     })
 
     const logoStyle = css({

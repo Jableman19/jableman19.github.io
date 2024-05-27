@@ -17,7 +17,24 @@
                     }
                 ],
 
-                "videoSrc": "https://www.youtube.com/embed/fAbD3sZS9Og"
+                "videoSrc": "https://www.youtube.com/embed/V1I_1G5gTW0?si=cers5a6HWGpVgEFr"
+            },
+            {
+                "id": "GBA",
+                "title": "Custom Game Boy Advance Game",
+                "date": "April 2024",
+                "description": [
+                    {
+                        "type": "text",
+                        "content": "I was inspired this year to create my own GBA game — and not just the game ROM, but have it working on an actual GBA system. As it turns out, this isn’t too hard if you’ve got the right tools. Using the Butano Engine, a host of C++ skills and game engine concepts that I would not have if not for the Game Engine Architecture course I took, and a Joey Jr, I was able to create a version of the Shift House that can live forever on - in a game cart. This project was so much fun and really rewarding. Learning to design a game for old architecture (with all the pains that comes with) and learning to make and design sprites was such a joy. I made all the sprites here save for the player character, which I stole and reskinned from Fire Red ;) If you want to play it, the ROM is available here on my itch page!"
+                    },
+                    {
+                        "type": "link",
+                        "content": "Itch Portfolio",
+                        "link": "https://jableman.itch.io/"
+                    }
+                ],
+                "videoSrc": "https://www.youtube.com/embed/doOOo9j-NYs?si=iUbwN1eLSjnEuEGb"
             },
             {
                 "id": "TWN",
@@ -75,6 +92,83 @@
                     }
                 ],
                 "imageSrc": "pokefy"
+            }
+        ]
+    },
+    {
+        "projects": [
+            {
+                "id": "KGP",
+                "title": "Skateboard Street iOS",
+                "date": "February - April 2023",
+                "description": [
+                    {
+                        "type": "text",
+                        "content": "One of my favorite projects this year, this game is a 3D skateboarding game made in Unity for iOS, and is effectively Subway Surfers - but with a twist! You can do awesome skate tricks B) You can try it out below but fair warning: it isn't that easy"
+                    },
+                    {
+                        "type": "link",
+                        "content": "App Store Download",
+                        "link": "https://apps.apple.com/us/app/skateboard-street/id6446802790"
+                    }
+                ],
+                "imageSrc": "kingpin"
+            },
+            {
+                "id": "ENG",
+                "title": "Custom Game Engine",
+                "date": "January 2024 - April 2024",
+                "description": [
+                    {
+                        "type": "text",
+                        "content": "Built a highly optimized game engine for OSX/Windows/Linux from the ground up with C++ as the base layer. This project is a fully functional 2D engine, with a lua scripting layer. It utilizes Box2d, SDL, LuaBridge, GLM, and the OpenAI API. It features an accessibility suite with auto-subtitling and colorblind modes, which you can hear more about here."
+                    },
+                    {
+                        "type": "link",
+                        "content": "(Youtube)",
+                        "link": "https://youtu.be/w5yNJ-O-9v4"
+                    }
+                ],
+                "imageSrc": "engine"
+            },
+            {
+                "id": "A2G",
+                "title": "A2GO",
+                "date": "February - March 2023",
+                "description": [
+                    {
+                        "type": "text",
+                        "content": "This project is based on the popualar AR mobile game, Pokemon Go, but with reimagined features and mechanics. I worked on this app for 3 weeks with my fellow student, Zachary Behrman. This was such a great learning experience for me as I gained familiarity with Unity's AR features, and mobile targeted development. Made in C# with Unity."
+                    }
+                ],
+                "videoSrc": "https://www.youtube.com/embed/g46pAkalxLo"
+            },
+            {
+                "id": "SAX",
+                "title": "Saxophone Simulator",
+                "date": "April 2021",
+                "description": [
+                    {
+                        "type": "text",
+                        "content": "In just one week, I created a Unity Engine application using C#, where I recorded and mixed all sounds, managed sound functionality and UI interactions, enabling users to play nearly two full octaves on a virtual saxophone. This project was accomplished remotely, collaborating with a partner through GitHub, Zoom, and Google Suite."
+                    }
+                ],
+                "imageSrc": "sax"
+            },
+            {
+                "id": "RUG",
+                "title": "Rug Tufting",
+                "description": [
+                    {
+                        "type": "text",
+                        "content": "I picked up rug tufting in early 2023 as a way to push myself creatively in the design space. The image above shows the first rug that I designed in blender and photoshop. This has been a great way for me to share my creativity with others as I have introduced and taught many people how to tuft rugs, and gifted a few as well."
+                    },
+                    {
+                        "type": "image",
+                        "content": "burtbee"
+                    }
+                ],
+                "imageSrc": "rug"
             }
         ]
     },
@@ -180,77 +274,5 @@
                 "imageSrc": "rings"
             }
         ]
-    },
-    {
-        "projects": [
-            {
-                "id": "KGP",
-                "title": "Skateboard Street iOS",
-                "date": "February - April 2023",
-                "description": [
-                    {
-                        "type": "text",
-                        "content": "One of my favorite projects this year, this game is a 3D skateboarding game made in Unity for iOS, and is effectively Subway Surfers - but with a twist! You can do awesome skate tricks B) You can try it out below but fair warning: it isn't that easy"
-                    },
-                    {
-                        "type": "link",
-                        "content": "App Store Download",
-                        "link": "https://apps.apple.com/us/app/skateboard-street/id6446802790"
-                    }
-                ],
-                "imageSrc": "kingpin"
-            },
-            {
-                "id": "ENG",
-                "title": "Custom Game Engine [WIP]",
-                "date": "January 2024 - Present",
-                "description": [
-                    {
-                        "type": "text",
-                        "content": "Building a highly optimized game engine for OSX/Windows/Linux from the ground up with C++ as the base layer. This project is early stage, and part of my game engine architecture class. Eventually, this will be a fully functional 2D engine, with a lua scripting layer."
-                    }
-                ],
-                "imageSrc": "engine"
-            },
-            {
-                "id": "A2G",
-                "title": "A2GO",
-                "date": "February - March 2023",
-                "description": [
-                    {
-                        "type": "text",
-                        "content": "This project is based on the popualar AR mobile game, Pokemon Go, but with reimagined features and mechanics. I worked on this app for 3 weeks with my fellow student, Zachary Behrman. This was such a great learning experience for me as I gained familiarity with Unity's AR features, and mobile targeted development. Made in C# with Unity."
-                    }
-                ],
-                "videoSrc": "https://www.youtube.com/embed/g46pAkalxLo"
-            },
-            {
-                "id": "SAX",
-                "title": "Saxophone Simulator",
-                "date": "April 2021",
-                "description": [
-                    {
-                        "type": "text",
-                        "content": "In just one week, I created a Unity Engine application using C#, where I recorded and mixed all sounds, managed sound functionality and UI interactions, enabling users to play nearly two full octaves on a virtual saxophone. This project was accomplished remotely, collaborating with a partner through GitHub, Zoom, and Google Suite."
-                    }
-                ],
-                "imageSrc": "sax"
-            },
-            {
-                "id": "RUG",
-                "title": "Rug Tufting",
-                "description": [
-                    {
-                        "type": "text",
-                        "content": "I picked up rug tufting in early 2023 as a way to push myself creatively in the design space. The image above shows the first rug that I designed in blender and photoshop. This has been a great way for me to share my creativity with others as I have introduced and taught many people how to tuft rugs, and gifted a few as well."
-                    },
-                    {
-                        "type": "image",
-                        "content": "burtbee"
-                    }
-                ],
-                "imageSrc": "rug"
-            }
-        ]
-    }        
+    }
 ]

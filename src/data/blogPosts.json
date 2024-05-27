@@ -1,0 +1,28 @@
+[
+    {
+        "id": "0001",
+        "title": "The first post, updates, and what this is all for",
+        "date": "05/26/2024",
+        "pinned": true,
+        "content":[
+            {
+                "type": "text",
+                "text":"Hello! This is my first post on this blog of mine. I'm hoping to use this as kind of a space to leave updates on my life, projects, career stuff - really whatever. I think I've been feeling pretty disillusioned with social media over the last year, but I still love having a place to organize my thoughts and put them out there for anyone that might want to see what I'm up to. Now yes, I could use Instagram or Twitter or something, but this feels a lot less performative and more safe. If you're reading this - you had to actually want to come to this page, it didn't just get plopped into your endless feed. So, from here on out, I'll be posting here whenever I like. Each post will hopefully have a little bit of updates and some photos, but I'm not going to be strict on myself. Whatever comes, will come."
+            },
+            {
+                "type": "text",
+                "text": "Anyway, What ~has~ been going on? Well to start, I've just graduated! I earned my BSE in Computer Science from the University of Michigan just a few weeks ago. I had such an amazing senior year (photos of which you can find below), and I accomplished so much. You can read about my creative endeavors through this medium article I wrote for Shift. "
+            },
+            {
+                "type": "link",
+                "text": "Read the article here",
+                "url": "https://medium.com/@jableman_44799/a-fond-farewell-to-home-a891967af273"
+            },
+            {
+                "type": "text",
+                "text": "So yeah, I'm really stoked on those projects - especially having made a real gameboy game. Way cool. Now, looking forward, I'm starting as a full time SDE at Amazon in August. I'll be moving out to San Francisco and couldn't be more excited. I'm so grateful to be in a city that is high proximity to so much natural beauty. Before all that though, I've got some time at home with family followed by a week in Hawaii where I'll be scuba diving, which will subsequently be followed by a month solo in Japan. I have always wanted to go to Japan, so be sure to keep an eye out for an absurdly long post about that. Anyway I think that's kind of it for now, but I'll write more soon. Photos below! Peace <3"
+            }
+        
+        ]
+    }
+]

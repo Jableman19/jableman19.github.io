@@ -46,7 +46,7 @@ function Nav() {
     const drawer = (
         <div>
             <List>
-                {['About', 'Projects', 'LinkedIn', 'Github', 'Resume'].map((text, index) => (
+                {['About', 'Projects', 'Blog', 'Contact', 'LinkedIn', 'Github', 'Resume'].map((text, index) => (
                     <ListItem button key={text} onClick={() => handleNavItemClick(text)}>
                         <ListItemText primary={text} />
                     </ListItem>
@@ -62,6 +62,12 @@ function Nav() {
                 break;
             case 'Projects':
                 navigate('/projects');
+                break;
+            case 'Blog':
+                navigate('/blogs');
+                break;
+            case 'Contact':
+                window.open("mailto:jableman@umich.edu");
                 break;
             case 'LinkedIn':
                 window.open("https://www.linkedin.com/in/jonah-ableman/", "_blank");
@@ -99,6 +105,12 @@ function Nav() {
                     </Button>
                     <Button variant = "contained" css={linkStyle} onClick={() => navigate('/projects')}>
                         Projects
+                    </Button>
+                    <Button variant = "contained" css={linkStyle} onClick={() => navigate('/blogs')}>
+                        Blog
+                    </Button>
+                    <Button variant = "contained" css={linkStyle} onClick={() => window.open("mailto:jableman@umich.edu")}>
+                        Contact
                     </Button>
                     <Button variant = "contained" css={linkStyle} href="https://www.linkedin.com/in/jonah-ableman/" target="_blank">
                         LinkedIn

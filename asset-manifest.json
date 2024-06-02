@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.75cd219e.css",
-    "main.js": "/static/js/main.cafaaf68.js",
+    "main.js": "/static/js/main.e0b1ccc2.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
     "static/media/flipbook.gif": "/static/media/flipbook.f23c54d2a46e5bd9413c.gif",
     "static/media/Engine.gif": "/static/media/Engine.f2b8eaad4578d3d24635.gif",
@@ -17,6 +17,7 @@
     "static/media/Mushroom.jpg": "/static/media/Mushroom.bc9ba3506f06c02cab4b.jpg",
     "static/media/Oshawott.jpg": "/static/media/Oshawott.0ae8c9ba3b4d62df1534.jpg",
     "static/media/Crochet3.jpg": "/static/media/Crochet3.03abb56c6b32fc19ea71.jpg",
+    "static/media/shadow.jpg": "/static/media/shadow.4accfc1e8996f85ca96f.jpg",
     "static/media/Crochet4.jpg": "/static/media/Crochet4.0b2b0c92a37a1e821cc4.jpg",
     "static/media/JonahPic.jpg": "/static/media/JonahPic.d143c704ae3f1942a944.jpg",
     "static/media/shift.png": "/static/media/shift.0f85fe51e8751b35f2da.png",
@@ -31,11 +32,11 @@
     "static/media/umich.png": "/static/media/umich.7fd9b9c0fcf6fb93c938.png",
     "index.html": "/index.html",
     "main.75cd219e.css.map": "/static/css/main.75cd219e.css.map",
-    "main.cafaaf68.js.map": "/static/js/main.cafaaf68.js.map",
+    "main.e0b1ccc2.js.map": "/static/js/main.e0b1ccc2.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.75cd219e.css",
-    "static/js/main.cafaaf68.js"
+    "static/js/main.e0b1ccc2.js"
   ]
 }

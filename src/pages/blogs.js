@@ -42,6 +42,9 @@ function Blogs() {
         fontWeight: 'bold',
         fontSize: '25px',
         margin: '0 20px',
+        '@media (max-width: 768px)': {
+            fontSize: '18px',
+        },
     });
 
     function NavPost(id){
@@ -60,7 +63,7 @@ function Blogs() {
             <div css={Cont}>
                 {blogPosts.map(post => (
                     <Card css = {cardStyle} onClick={NavPost(post.id)}>
-                            <Typography css = {accTitle}>{post.title}</Typography>
+                            <Typography css = {accTitle} className="title" variant="p">{post.title}</Typography>
                             <Divider orientation="vertical"/>
                             <Typography css = {accDate}>{post.date}</Typography>
                     </Card>        

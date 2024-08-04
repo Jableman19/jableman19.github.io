@@ -92,6 +92,18 @@
                     }
                 ],
                 "imageSrc": "pokefy"
+            },
+            {
+                "id": "SDW",
+                "title": "Shadow Box",
+                "date": "2024",
+                "description": [
+                    {
+                        "type": "text",
+                        "content": "This was just a fun little craft project I made with my friend Lydia. It's a shadowbox recreation of my college house (aka the Shift House). The shadowbox was super fun to make and we had a blast trying to capture the essence of all that goes on in the house."
+                    }
+                ],
+                "imageSrc": "shadow"
             }
         ]
     },
@@ -130,6 +142,23 @@
                     }
                 ],
                 "imageSrc": "engine"
+            },
+            {
+                "id":"CTF",
+                "title": "Cat-Fishing (Game Jam)",
+                "date": "May 2024",
+                "description": [
+                    {
+                        "type": "text",
+                        "content": "This project was a quick Game Jam project that I worked on with Lydia Tan over the course of ~12 hours. She was responsible for all of the artwork, while I handled the programming. This game is made using my own custom game engine, and is scripted using Lua. The premise is simple, swipe right on as many 'green flag' profiles as you can while swiping left on the 'red flag' profiles. The game is timed, and the goal is to get as many points as possible. You can play it on my itch page below"
+                    },
+                    {
+                        "type": "link",
+                        "content": "Itch Portfolio",
+                        "link": "https://jableman.itch.io/"
+                    }
+                ],
+                "imageSrc": "catfish"
             },
             {
                 "id": "A2G",

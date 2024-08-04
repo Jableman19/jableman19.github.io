@@ -77,9 +77,9 @@ function Home() {
                 <Typography variant = "p" className="title" css={css({paddingRight: '50px', fontSize: '20px', fontWeight: "bold", lineHeight: 1.8})}>
                     Hello! My name is Jonah Ableman - thanks for visiting my site. I initially created this as a tool to help myself professionally.
                     Nowadays, it more just serves as a place for me to document what I'm up to creatively, professionally, and personally!
-                    If you don't already know me, I'm going to be an SDE at Amazon in August, and when it comes to tech, I am extremely passionate about emergent technologies, especially those relating to extended reality initiatives. 
-                    Personally, though, I'm many more things. I love music more than anything and I'm constantly going to concerts and playing guitar. I am pretty actively skateboarding and bouldering, and I've recently started taking hiking more seriously. When I'm not bullying my body I love to cozy up with a book or wind down playing videogames.
-                    I'm always trying to push myself creatively and make fun projects of all kinds - feel free to take a look at my projects page or my blogs to see what I'm up to and feel free to reach out for any reason, I always love to chat.
+                    If you don't already know me, I'm going to be an SDE at Amazon in August, and when it comes to tech, I am extremely passionate about technologies relating to extended reality initiatives and game development! I'm always happy to be learning something new. 
+                    More personally though, I love music more than anything and I'm constantly going to concerts and playing guitar. I am pretty actively skateboarding and bouldering, and I've recently started taking hiking more seriously. When I'm not bullying my body I love to cozy up with a book or wind down playing videogames. I'm also currently studying Japanense!
+                    I'm always trying to push myself creatively and make fun projects of all kinds - feel free to take a look at my projects page or my blogs to see what I'm up to. If you'd like to chat for any reason please reach out :{')'}
                 </Typography>
             </Card>
             {/* Experience Card */}

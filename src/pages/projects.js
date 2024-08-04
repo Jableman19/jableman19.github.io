@@ -27,6 +27,8 @@ function Projects() {
         'rings': require('../files/Rings1.jpg'),
         'isaac': require('../files/isaac.gif'),
         'pokefy': require('../files/pokefy.gif'),
+        'catfish': require('../files/CatFish.gif'),
+        'shadow': require('../files/shadow.jpg'),
     };
 
     //Styles
@@ -60,7 +62,10 @@ function Projects() {
     const imageStyle = css({
         width: 'auto',
         display: 'block', 
-        margin: 'auto',
+        objectFit: 'cover',
+        position: 'relative',
+        left: '50%',
+        transform: 'translateX(-50%)',
     })
 
     const cardStyle = css({
@@ -69,12 +74,16 @@ function Projects() {
         '&:hover':{
             boxShadow: "5px 5px #49a362"
         },
+        justifyContent: 'center',
+        alignItems: 'center',
     })
 
     const accDate = css({
         textAlign: 'right',
         float: 'right',
         marginLeft:'auto',
+        marginBottom: 'auto',
+        marginTop: 'auto',
         fontSize:"12px"
     })
 
@@ -120,7 +129,15 @@ function Projects() {
                         {projectList.projects.map(project => (
                             <Card onMouseLeave={() => {handleChange("");}} onMouseOver={() => handleChange(project.id)} css = {cardStyle}>
                                 {project.videoSrc ? (
-                                    <iframe height="315" width="100%" src={project.videoSrc} title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
+                                    <iframe 
+                                        height="315px"
+                                        width="100%"  
+                                        css={css({ display: 'block', margin: 0, padding: 0, border: 'none' })}
+                                        src={project.videoSrc} 
+                                        title="YouTube video player" 
+                                        frameBorder="0" 
+                                        allowFullScreen>
+                                    </iframe>
                                 ) : (
                                     <img height={"315px"} src={`${images[project.imageSrc]}`} alt={project.title} css={imageStyle}></img>
                                 )}

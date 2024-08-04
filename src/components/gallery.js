@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { useEffect, useState } from 'react';
-import { Typography, Card, Divider } from "@mui/material";
+import { Typography, Card, Divider, Dialog, DialogContent } from "@mui/material";
 import { css } from "@emotion/react";
 import axios from 'axios';
 
@@ -28,17 +28,27 @@ const styles = {
         },
         backgroundColor: '#f2eeed',
     }),
+    dialogImg: css({
+        maxWidth: '100%',
+        maxHeight: '80vh',
+        
+    }),
 };
-
 
 function Gallery(num = "0000") {
     const [images, setImages] = useState([]);
+    const [open, setOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
 
-    const OpenPhoto = (url) => {
-        return () => {
-            window.open(url, '_blank');
-        };
-    }
+    const handleClickOpen = (url) => {
+        setSelectedImage(url);
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+        setSelectedImage(null);
+    };
 
     useEffect(() => {
         const fetchImages = async () => {
@@ -64,14 +74,21 @@ function Gallery(num = "0000") {
     }, []);
 
     return (
-        <div css={styles.gridCont}>
-            {images.map((url, index) => (
-                <div css={styles.cardCont} onClick={OpenPhoto(url)}>
-                    <img src={url} alt={`S3 content ${index}`} css={styles.imgStyle} />
-                </div>
-            ))}
-        </div>
+        <>
+            <div css={styles.gridCont}>
+                {images.map((url, index) => (
+                    <div key={index} css={styles.cardCont} onClick={() => handleClickOpen(url)}>
+                        <img src={url} alt={`S3 content ${index}`} css={styles.imgStyle} />
+                    </div>
+                ))}
+            </div>
+            <Dialog open={open} onClose={handleClose} maxWidth="md">
+                <DialogContent>
+                    {selectedImage && <img src={selectedImage} alt="Selected content" css={styles.dialogImg} />}
+                </DialogContent>
+            </Dialog>
+        </>
     );
 }
 
-export default Gallery;
+export default Gallery

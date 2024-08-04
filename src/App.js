@@ -20,7 +20,7 @@ function App() {
         <Route path = "/post/:postNumber/" element = {<Post/>}/>
         <Route path = "/blogs" element = {<Blogs/>}/>
       </Routes>
-      <p css = {css({margin: "auto", textAlign: "center", paddingBottom: '15px'})}> &copy; Jonah Ableman 2024</p>
+      <p css = {css({margin: "auto", textAlign: "center", paddingBottom: '15px'})}> &copy; Jonah Ableman 2024 | jableman@umich.edu</p>
     </HashRouter>
   );
 }

@@ -20,11 +20,6 @@ const Cont = css({
     marginTop: '10px',
     marginLeft: '75px', 
     marginRight: '75px',
-    //for mobile
-    '@media (max-width: 768px)': {
-        marginLeft: '10px', 
-        marginRight: '10px',
-    },
 })
 
 //Helper function to render description items
@@ -45,7 +40,10 @@ function Post() {
     const post = blogPosts.find(post => post.id === postNumber);
     return (
         <div>
-            <Typography variant = "h4" css={css({marginTop: "85px", marginBottom: "5px", textAlign: "left", marginLeft: "50px", fontWeight: 'bold'})}>
+            <Typography variant = "h5" css={css({marginTop: "85px", marginBottom: "5px", marginLeft:'50px', textAlign: "left", fontWeight: '100'})}>
+                {post.date}
+            </Typography>
+            <Typography variant = "h4" css={css({marginTop: "5px", marginBottom: "5px", textAlign: "left", marginLeft: "50px", fontWeight: 'bold'})}>
                 {post.title}
             </Typography>
             <Divider css={css({marginLeft: '50px', marginRight: '100px'})}/>

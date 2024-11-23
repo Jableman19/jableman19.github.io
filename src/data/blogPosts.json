@@ -1,5 +1,37 @@
 [
     {
+        "id": "0003",
+        "title": "The first months in San Francisco",
+        "date": "11/22/2024",
+        "pinned": false,
+        "content":[
+            {
+                "type": "text",
+                "text": "It's been a while, and today I just suppose I feel like writing. And I have many reasons for that feeling; not only has it been a busy and eventful few months, but the seasons are starting to change, I'll be heading home for thanksgiving in just a couple days, and I’ve recently been feeling the weight of all the change. I’ve noticed I feel compelled to write when I’m feeling a little down, and the permanence of the move has been hitting me lately. And on top of that, I’m on call for work at the moment - so it’s not like I’ve got anything better to be doing. As always, photos are all down at the bottom!"
+            },
+            {
+                "type": "text",
+                "text": "Since I last wrote, I drove across the country to San Francisco with my dad who helped me move into my new apartment. As I mentioned in my last post, I was SO excited, and immediately got to work on making it feel like home. This ended up being a disaster, as my landlord let me know he’d be terminating the lease less than a week later. Mix that together with trying to find a new place last second, starting my first real job, and a few other emotional hurdles and I had quite a head spin for my first 4 or so weeks in SF. Now that the dust has settled though, I really am glad that things turned out this way. I love my current apartment and spent a couple weeks busying myself with some DIY projects to make it feel a bit more homely. I made some side table/benches out of some old skateboards, crocheted some sunflower coasters, made a sick pendant light for our living room, painted a shelf, crocheted a really long ass vine to wrap around the pipe in my bedroom, and just in general had a ton of fun putting up shelves and playing interior designer for a month or so. Not to mention, the view is fantastic and Miles is a great roommate."
+            },
+            {
+                "type":"text",
+                "text": "SF has been lovely, and now that things are taking a turn for the colder, I’m really starting to appreciate how wonderful the weather has been these last few months. Getting to enjoy long days in the park with friends, going on hikes just outside the city, or just riding a bike along the water on sunday to go get my groceries, it’s been wonderful. I’ve also felt the pleasures of being in a big city and having all my favorite bands come through. I got to see Foxing tour their new album (which has become my new favourite thing to yell/cry along to when I’m having a bad day), and Julien Baker who I have been wanting to see since I was 15!! During the summery months at least, it feels like there’s always some event going on or a market nearby that begs checking out. I really like it here. "
+            },
+            {
+                "type": "text",
+                "text": "I think one of my biggest fears when moving was isolation from the people I care about. Yes, I’d be moving close to some of my friends, but I would be moving very far from a lot of the people I care deeply about, and farther from my family than I’ve ever been. While I can’t say I’ve successfully 100% staved off loneliness, I’ve been so relieved to feel still connected to a lot of my friends. Catching up through text or over the phone has become one of my favorite pastimes. If you’ve messaged me or called me even just once in the past 3 months, from the bottom of my heart, thank you. It means the world. If you’re reading this and you haven’t (or even if you have), please do! I probably want to hear from you :) "
+            },
+            {
+                "type": "text",
+                "text": "Outside of all the above, I’ve still been chipping away at my Japanese learning and am pretty pleased with my progress, even if it’s a bit slower than I would like (I started reading Yotsuba To! And it single-handedly puts the largest smile on my face with every passing chapter). I’ve been keeping up with my bouldering, which I have to say having an awesome gym a 5 minute walk away is game changing. And just generally trying to enjoy myself to the best of my abilities. Eating good food, reading a lot, and listening to music/playing guitar whenever I get the chance. Like all stages in my life, lots has changed, and also nothing has. There are happy days and sad. I don’t know if I’d say I’ve really settled in here yet, but I’m working on it."
+            },
+            {
+                "type":"text",
+                "text": "If you read this to the end, or at all, you’re the best. Peace <3"
+            }
+        ]
+    },
+    {
         "id": "0002",
         "title": "Travels in Hawaii and Japan, and a look into what's next",
         "date": "08/03/2024",

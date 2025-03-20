@@ -5,6 +5,7 @@ import { Divider, Typography } from "@mui/material";
 import { css } from "@emotion/react";
 import blogPosts from "../data/blogPosts.json";
 import React from "react";
+import { FormatListBulleted } from "@mui/icons-material";
 
 
 const pImage = css({
@@ -32,6 +33,15 @@ const renderDescItem = (desc) => {
     }
     else if(desc.type === "link"){
         return <a target="_blank" href={desc.url}>{desc.text}</a>
+    }
+    else if(desc.type === "bullet"){
+        return(
+        <ul>
+            {desc.items.map(item => (
+                <li>{item}</li>
+            ))}
+        </ul>
+        )
     }
 }
 

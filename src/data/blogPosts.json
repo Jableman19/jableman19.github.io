@@ -1,5 +1,49 @@
 [
     {
+        "id": "0004",
+        "title": "2025, a year of japanese, and … more?",
+        "date": "03/19/2025",
+        "pinned": false,
+        "content":[
+            {
+                "type": "text",
+                "text": "Hello hello time for another blog post 😎"
+            },
+            {
+                "type": "text",
+                "text": "Well to start, this post is gonna be about pretty much everything since last time, but notably I’ll have a section for the new year and also my japanese learning anniversary? Maybe? Idk well see. Pics at the bottom as always (I should really add image embedding but I’m lazy. Maybe next time."
+            },
+            {
+                "type": "text",
+                "text": "So it’s a new year! And I, like many other members of the masses, was influenced upon by social media. What I mean when I say that, is people online were making ‘bingo cards’ of goals for the new year instead of resolutions. The concept is that since you’re making more of a checklist rather than things you can fail at, you’re more inclined to keep going even if you slip up every now and then. Plus, you only really need to get 5/25 for a bingo (four with the free space!) It caught on pretty fast, and well I guess I can be a sheep sometimes because I loved the idea and made my own! You can check out my crappy gimp bingo board below, but I’m really excited about it. Plus, one of my goals for the year is 4 blog posts so I’m really cooking right now (why do you think I’m writing this at the ¼ year mark haha) Anyway, I think it’s been great so far! I’ve got my board printed out next to my door, and I have a sticky note for each goal where I can track progress or related items - It’s been fun and I like having small reminders of what I want to be doing. Anyway, seeing as this is the ¼ year mark I figured i’d do a little data analysis (simple math) and see how things are coming along. I divided my goals into 2 categories, ones that are countables (do x, y times) and ones that are black and white. For the countables, I’m an average of 29.5% of the way through!!!! Pretty good right? Well, unfortunately I’ve only completed 2 of the 16 black or white ones… 12.5%. Less good. Oh well, those are not as black and white as I make them out to be statistically so I think it’s going alright haha. That’s enough of that I guess but I’m pretty proud of what I’ve managed so far and it’s shaping up to be a good year!"
+            },
+            {
+                "type":"text",
+                "text":"Moving on to my Japanese learning anniversary, today is the very day I started, a year ago (or at least, it’s when I placed an order on amazon for the Genki Textbooks, so more or less haha). It turns out when you start learning a language, you very often get asked why you are learning. Looking back, I really am not sure why I started other than my upcoming trip, but I’m super glad I did, it’s become quite the hobby for me. There are days when I think how have I accomplished so little in a year, and there are days when I cannot believe how far I’ve come. Luckily, today I’m feeling good. It’s insane to think that I didn’t know the first thing a year ago. Some stuff I’ve accomplished in my first year. Read Genki I+2 Textbooks as well as their workbooks and supplemental videos, hit 5000 cards in Anki (although theres likely a handful of duplicates in there haha), made it to Level 25 on WaniKani, managed a few crappy conversations, listened to 500+ Nihongo Con Teppei episodes (lol), read a ton of Satori Reader stories and graded readers, 15 (!) Manga volumes, 1 children’s book (frog and toad <3), watched the brand new DragonBall Daima series, and a handful of movies. I recently started reading my first “full novel” (targeted at middle schoolers but a win is a win) Kiki’s Delivery Service, and I’m about 80 pages in. I’m really so so happy with my progress - When I was in japan only 8 months ago, I bought some books thinking they would be completely unreadable for another 3 years, but are now totally within reach. It’s a great feeling going from confusing katakana left and right to being able to read, listen, and speak (even if it’s like a baby). That said, there is still a super long road ahead! This post is already stupid long, so I’m not gonna put too much time into thinking about it, but I’m gonna set a few goals here for the next year to hopefully achieve before March rolls around again. Guess I’m gonna have to add list functionality to my site for this huh. Anyway I hope to:"
+            },
+            {
+                "type":"bullet",
+                "items":[
+                    "Complete Quartet 1 and 2 Textbooks",
+                    "Read all of Yotsuba",
+                    "Read all of DragonBall",
+                    "Do at least 25 hours of speaking practice",
+                    "Take the N3 ( just to measure progress :p )",
+                    "Read 3 “real” books",
+                    "WaniKani level 50"
+                  ]
+            },
+            {
+                "type": "text",
+                "text": "We’ll see how these things actually shake out, but regardless, I’m pretty excited for another year of this - it’s only getting more fun as I get better!"
+            },
+            {
+                "type": "text",
+                "text": "Okay okay I’m gonna wrap this up. Some other things that have been going on! (and can mostly be seen in the photos). I crocheted some flowers, and a little net thing for my bedside lamp, as well as more sunflower coasters for a housewarming gift. I did some traveling back home, to seattle, and out to LA! I had to rebuild my skateboard table/stool things because my poor craftsmanship sadly faltered while miles was eating lunch. Hit 6 months as a corporate boy. I went outdoor bouldering for the first time. Got to see Christian Lee Hutson, and Dawes again of course. Been generally just enjoying my time in san francisco. Also Ironically, almost a year since I created this as an outlet bc I missed my social media fix, I’ve finally completely stopped using Instagram, which has been nice. Theres other things I’m missing but yeah! Things have been good. As per uuuusual - if you read all this, I’m sorry. But thanks for caring! Hope it was mildly entertaining enough. See ya! "
+            }
+        ]
+    },
+    {
         "id": "0003",
         "title": "The first months in San Francisco",
         "date": "11/22/2024",

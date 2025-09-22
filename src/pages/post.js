@@ -43,6 +43,11 @@ const renderDescItem = (desc) => {
         </ul>
         )
     }
+    else if(desc.type === "spotify"){
+        return(
+          <div><br/><iframe data-testid="embed-iframe" style={{borderRadius: "12px", paddingLeft:"10%"}} src={desc.link} width="80%" height="152" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+        )
+    }
 }
 
 function Post() {

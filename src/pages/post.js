@@ -1,12 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import Gallery from "../components/gallery";
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Divider, Typography } from "@mui/material";
 import { css } from "@emotion/react";
-import blogPosts from "../data/blogPosts.json";
 import React from "react";
-import { FormatListBulleted } from "@mui/icons-material";
-
+import axios from 'axios';
 
 const pImage = css({
     width: 'auto',
@@ -19,9 +18,12 @@ const pImage = css({
 //Styles
 const Cont = css({
     marginTop: '10px',
-    marginLeft: '75px', 
-    marginRight: '75px',
+    marginLeft: '25%', 
+    marginRight: '25%',
 })
+
+const bucketUrl = "https://jableman-blogs.s3.us-east-2.amazonaws.com";
+
 
 //Helper function to render description items
 const renderDescItem = (desc) => {
@@ -51,8 +53,26 @@ const renderDescItem = (desc) => {
 }
 
 function Post() {
-    const { postNumber } = useParams();    
-    const post = blogPosts.find(post => post.id === postNumber);
+    const { postNumber } = useParams();
+    const [post, setPost] = useState(null);
+
+    useEffect(() => {
+        const fetchPost = async () => {
+            try {
+                const res = await axios.get(
+                    `${bucketUrl}/${postNumber}/blog.json`
+                );
+                setPost(res.data);
+            } catch (err) {
+                console.error("Error fetching post:", err);
+            }
+        };
+
+        fetchPost();
+    }, [postNumber]);
+
+    if (!post) return <div>Loading...</div>;
+
     return (
         <div>
             <Typography variant = "h5" css={css({marginTop: "85px", marginBottom: "5px", marginLeft:'50px', textAlign: "left", fontWeight: '100'})}>
@@ -66,7 +86,7 @@ function Post() {
             <div css={Cont}>
                 {post.content.map((item, index) => (
                     <React.Fragment key={index}>
-                        {renderDescItem(item)}
+                        {renderDescItem(item, postNumber)}
                     </React.Fragment>
                 ))}
             </div>

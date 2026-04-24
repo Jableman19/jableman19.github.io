@@ -1,12 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { useEffect, useState } from 'react';
-import { Typography, Card, Divider, Dialog, DialogContent } from "@mui/material";
+import { Dialog, DialogContent } from "@mui/material";
 import { css } from "@emotion/react";
 import axios from 'axios';
 
 const bucketName = 'blogbucket';
 const bucketRegion = 'us-east-2';
-const prefix = ''; // Add prefix if your images are in a subfolder
 
 const styles = {
     gridCont: css({
@@ -53,7 +52,7 @@ function Gallery(num = "0000") {
     useEffect(() => {
         const fetchImages = async () => {
             try {
-                const response = await axios.get(`https://${bucketName+num?.num}.s3.${bucketRegion}.amazonaws.com?list-type=2&prefix=${prefix}`);
+                const response = await axios.get(`https://${bucketName+num?.num}.s3.${bucketRegion}.amazonaws.com?list-type=2`);
                 const parser = new DOMParser();
                 const xml = parser.parseFromString(response.data, 'application/xml');
                 const contents = xml.getElementsByTagName('Contents');
@@ -62,7 +61,9 @@ function Gallery(num = "0000") {
                 for (let i = 0; i < contents.length; i++) {
                     const key = contents[i].getElementsByTagName('Key')[0].textContent;
                     const url = `https://${bucketName+num?.num}.s3.${bucketRegion}.amazonaws.com/${key}`;
-                    imageUrls.push(url);
+                    if(!key.endsWith(".json")){
+                        imageUrls.push(url);
+                    }
                 }
                 setImages(imageUrls);
             } catch (error) {

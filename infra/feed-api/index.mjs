@@ -3,10 +3,25 @@ import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, QueryCommand, PutCommand, UpdateCommand, DeleteCommand } from "@aws-sdk/lib-dynamodb";
 import { S3Client, PutObjectCommand, DeleteObjectCommand } from "@aws-sdk/client-s3";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
+import { SSMClient, GetParameterCommand } from "@aws-sdk/client-ssm";
 
-const { TABLE, BUCKET, API_TOKEN, AWS_REGION } = process.env;
+const { TABLE, BUCKET, API_TOKEN, AWS_REGION, VISIBLE_PARAM } = process.env;
 const db = DynamoDBDocumentClient.from(new DynamoDBClient({}));
 const s3 = new S3Client({ requestChecksumCalculation: "WHEN_REQUIRED" });
+const ssm = new SSMClient({});
+let visible = { value: true, checked: 0 };
+
+async function feedVisible() {
+  if (Date.now() - visible.checked > 30000) {
+    try {
+      const out = await ssm.send(new GetParameterCommand({ Name: VISIBLE_PARAM }));
+      visible = { value: out.Parameter.Value.trim().toLowerCase() !== "false", checked: Date.now() };
+    } catch (err) {
+      console.error(err);
+    }
+  }
+  return visible.value;
+}
 const bucketUrl = `https://${BUCKET}.s3.${AWS_REGION}.amazonaws.com/`;
 
 const res = (statusCode, body) => ({
@@ -126,7 +141,7 @@ export const handler = async (event) => {
   }));
 
   try {
-    if (method === "GET" && path === "/feed") return res(200, await listFeed());
+    if (method === "GET" && path === "/feed") return res(200, (await feedVisible()) ? await listFeed() : []);
 
     if (auth !== `Bearer ${API_TOKEN}`) return res(401, { error: "unauthorized" });
 

@@ -58,12 +58,14 @@ const styles = {
 function Feed() {
     const [posts, setPosts] = useState([]);
     const [selected, setSelected] = useState(null);
+    const [loading, setLoading] = useState(true);
     const months = [...new Set(posts.map(post => post.month))];
 
     useEffect(() => {
         axios.get(`${feedApi}/feed`)
             .then(res => setPosts(res.data))
-            .catch(err => console.error("Error fetching feed:", err));
+            .catch(err => console.error("Error fetching feed:", err))
+            .finally(() => setLoading(false));
     }, []);
 
     return (
@@ -72,6 +74,11 @@ function Feed() {
                 Feed
             </Typography>
             <Divider css={css({marginLeft: '100px', marginRight: '100px'})}/>
+            {(loading || posts.length === 0) && (
+                <Typography css={css({marginTop: '40px', marginBottom: '40px', textAlign: 'center'})}>
+                    {loading ? "Loading..." : "No posts"}
+                </Typography>
+            )}
             {months.map(month => (
                 <div key={month}>
                     <Typography variant="h5" css={styles.month}>{formatMonth(month)}</Typography>

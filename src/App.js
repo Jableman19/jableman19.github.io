@@ -4,9 +4,10 @@ import './App.css';
 import { Routes, Route, HashRouter } from "react-router-dom"
 import Home from "./pages/home"
 import Nav from "./components/nav"
-import Post from "./pages/post"
+// import Post from "./pages/post"
 import Projects from './pages/projects';
-import Blogs from './pages/blogs';
+// import Blogs from './pages/blogs';
+import Feed from './pages/feed';
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
       <Routes>
         <Route path ="/" element={<Home/>}/>
         <Route path ="/projects" element={<Projects/>}/>
-        <Route path = "/post/:postNumber/" element = {<Post/>}/>
-        <Route path = "/blogs" element = {<Blogs/>}/>
+        {/* <Route path = "/post/:postNumber/" element = {<Post/>}/> */}
+        {/* <Route path = "/blogs" element = {<Blogs/>}/> */}
+        <Route path = "/feed" element = {<Feed/>}/>
       </Routes>
       <p css = {css({margin: "auto", textAlign: "center", paddingBottom: '15px'})}> &copy; Jonah Ableman 2024 | jableman@umich.edu</p>
     </HashRouter>

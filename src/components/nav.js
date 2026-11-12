@@ -46,7 +46,7 @@ function Nav() {
     const drawer = (
         <div>
             <List>
-                {['About', 'Projects', 'Blog', 'Contact', 'LinkedIn', 'Github', 'Resume'].map((text, index) => (
+                {['About', 'Feed', 'Projects', /* 'Blog', */ 'Contact', 'LinkedIn', 'Github', 'Resume'].map((text, index) => (
                     <ListItem button key={text} onClick={() => handleNavItemClick(text)}>
                         <ListItemText primary={text} />
                     </ListItem>
@@ -63,8 +63,11 @@ function Nav() {
             case 'Projects':
                 navigate('/projects');
                 break;
-            case 'Blog':
-                navigate('/blogs');
+            // case 'Blog':
+            //     navigate('/blogs');
+            //     break;
+            case 'Feed':
+                navigate('/feed');
                 break;
             case 'Contact':
                 window.open("mailto:jableman@umich.edu");
@@ -103,12 +106,15 @@ function Nav() {
                     <Button variant = "contained" css={linkStyle} onClick={() => navigate('/')}>
                         About
                     </Button>
+                    <Button variant = "contained" css={linkStyle} onClick={() => navigate('/feed')}>
+                        Feed
+                    </Button>
                     <Button variant = "contained" css={linkStyle} onClick={() => navigate('/projects')}>
                         Projects
                     </Button>
-                    <Button variant = "contained" css={linkStyle} onClick={() => navigate('/blogs')}>
+                    {/* <Button variant = "contained" css={linkStyle} onClick={() => navigate('/blogs')}>
                         Blog
-                    </Button>
+                    </Button> */}
                     <Button variant = "contained" css={linkStyle} onClick={() => window.open("mailto:jableman@umich.edu")}>
                         Contact
                     </Button>

@@ -78,7 +78,7 @@ function Home() {
                     Hello! My name is Jonah Ableman - thanks for visiting my site. I initially created this as a tool to help myself professionally.
                     Nowadays, it more just serves as a place for me to document what I'm up to creatively, professionally, and personally!
                     I love music more than anything and I'm constantly going to concerts and playing guitar. I am pretty actively skateboarding and bouldering, and I've recently started taking hiking more seriously. When I'm not bullying my body I love to cozy up with a book, crochet a little, or wind down playing videogames. I'm also currently studying Japanense!
-                    I'm always trying to push myself creatively and make fun projects of all kinds - feel free to take a look at my projects page or my blogs to see what I'm up to {"(I've sorta stopped updating the projects page for the time being and just throwing stuff in with the blogs but maybe I'll update it at some point)"}. Currently living in SF, working as an SDE at Amazon! If you'd like to chat for any reason please reach out :{')'}
+                    I'm always trying to push myself creatively and make fun projects of all kinds - feel free to take a look at my projects page or my feed to see what I'm up to {"(I've sorta stopped updating the projects page for the time being and just throwing stuff in the feed, but maybe I'll update it at some point)"}. Currently living in SF, working as an SDE at Amazon! If you'd like to chat for any reason please reach out :{')'}
                 </Typography>
             </Card>
             {/* Experience Card */}

@@ -1,0 +1,78 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+
+Parameters:
+  ApiToken:
+    Type: String
+    NoEcho: true
+
+Resources:
+  FeedBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: false
+        RestrictPublicBuckets: false
+      CorsConfiguration:
+        CorsRules:
+          - AllowedMethods: [GET, PUT]
+            AllowedOrigins: ["*"]
+            AllowedHeaders: ["*"]
+
+  FeedBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref FeedBucket
+      PolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal: "*"
+            Action: s3:GetObject
+            Resource: !Sub "${FeedBucket.Arn}/*"
+
+  FeedTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: pk
+          AttributeType: S
+        - AttributeName: sk
+          AttributeType: S
+      KeySchema:
+        - AttributeName: pk
+          KeyType: HASH
+        - AttributeName: sk
+          KeyType: RANGE
+
+  FeedFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: feed-api/
+      Handler: index.handler
+      Runtime: nodejs20.x
+      Timeout: 10
+      Environment:
+        Variables:
+          TABLE: !Ref FeedTable
+          BUCKET: !Ref FeedBucket
+          API_TOKEN: !Ref ApiToken
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref FeedTable
+        - S3CrudPolicy:
+            BucketName: !Ref FeedBucket
+      FunctionUrlConfig:
+        AuthType: NONE
+        Cors:
+          AllowOrigins: ["*"]
+          AllowMethods: ["*"]
+          AllowHeaders: ["authorization", "content-type"]
+
+Outputs:
+  FeedApiUrl:
+    Value: !GetAtt FeedFunctionUrl.FunctionUrl
+  FeedBucketName:
+    Value: !Ref FeedBucket
